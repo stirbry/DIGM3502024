@@ -16,26 +16,32 @@ MonoBehaviour:
     dialogueText: This is the start of the conversation.
     responses:
     - responseText: Option 1.
+      responseValue: 25
       nextNode:
         dialogueText: You chose Option 1.
         responses:
         - responseText: Close.
+          responseValue: 0
           nextNode:
             dialogueText: 
             responses: []
     - responseText: Option 2.
+      responseValue: 0
       nextNode:
         dialogueText: You chose Option 2.
         responses:
         - responseText: Close.
+          responseValue: 0
           nextNode:
             dialogueText: 
             responses: []
     - responseText: Option 3.
+      responseValue: 0
       nextNode:
         dialogueText: You chose Option 3.
         responses:
         - responseText: Close.
+          responseValue: 0
           nextNode:
             dialogueText: 
             responses: []

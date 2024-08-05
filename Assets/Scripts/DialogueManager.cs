@@ -17,6 +17,7 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI DialogTitleText, DialogBodyText; // Text components for title and body
     public GameObject responseButtonPrefab; // Prefab for generating response buttons
     public Transform responseButtonContainer; // Container to hold response buttons
+    public PrinceController theLittlePrince; //Prince char to keep updating interest with each option
 
     private void Awake()
     {
@@ -43,6 +44,8 @@ public class DialogueManager : MonoBehaviour
         // Set dialogue title and body text
         DialogTitleText.text = title;
         DialogBodyText.text = node.dialogueText;
+
+
 
         // Remove any existing response buttons
         foreach (Transform child in responseButtonContainer)
@@ -72,6 +75,9 @@ public class DialogueManager : MonoBehaviour
     // Handles response selection and triggers next dialogue node
     public void SelectResponse(DialogueResponse response, string title)
     {
+        //set Prince's interest Value after selecting a response
+        theLittlePrince.changeInterestValue(response.responseValue);
+
         // Check if there's a follow-up node
         if (!response.nextNode.IsLastNode())
         {

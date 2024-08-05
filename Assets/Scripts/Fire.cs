@@ -5,6 +5,7 @@ using UnityEngine;
 public class Fire : MonoBehaviour
 {
     public bool isLit, lamplightEquip, snufferEquip;
+    public SpriteRenderer fireSprite;
 
     // Start is called before the first frame update
     void Start()
@@ -16,10 +17,17 @@ public class Fire : MonoBehaviour
 
     public void fireUpdate()
     {
-        if((isSnufferEquipped() && isFireOn()) || (isLamplightEquipped() && (isFireOn() ^ isLamplightEquipped())))
+        if((isSnufferEquipped() && isFireOn()))
         { 
             switchFireStatus();
             Debug.Log("Fire is On? = " + isLit);
+            fireSprite.enabled = false;
+        }
+        else if (isLamplightEquipped() && (isFireOn() ^ isLamplightEquipped()))
+        {
+            switchFireStatus();
+            Debug.Log("Fire is On? = " + isLit);
+            fireSprite.enabled = true;
         }
         else
         {
