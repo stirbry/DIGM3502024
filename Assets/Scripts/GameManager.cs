@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
     // Lamp Timer Variables
     public float waitTime = 15.0f;
     public float timer = 0.0f;
-    public GameObject flame;
 
     // Update is called once per frame
     void Update()
