@@ -53,7 +53,15 @@ public class DialogueManager : MonoBehaviour
         // Create and setup response buttons based on current dialogue node
         foreach (DialogueResponse response in node.responses)
         {
-            GameObject buttonObj = Instantiate(responseButtonPrefab, responseButtonContainer);
+            GameObject buttonObj = Instantiate(responseButtonPrefab);
+            buttonObj.transform.SetParent(responseButtonContainer);
+
+            RectTransform thisButtonTransform =  buttonObj.GetComponent<RectTransform>();
+            thisButtonTransform.anchoredPosition = new Vector2(0.0f,0.0f);
+            thisButtonTransform.localScale = Vector3.one;
+            thisButtonTransform.localRotation = Quaternion.identity;
+
+
             buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = response.responseText;
 
             // Setup button to trigger SelectResponse when clicked
