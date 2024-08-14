@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
     public DayNightStatus dayNightStatus;
     public Fire fire;
 
-    // Lamp Timer Variables
     public float waitTime = 15.0f;
     public float timer = 0.0f;
 

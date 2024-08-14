@@ -9,31 +9,16 @@ using UnityEngine.UI;
 public class PrinceController : MonoBehaviour
 {
     public string Name;
-    public Dialogue Dialogue;
+    //public Dialogue Dialogue;
 
     //the max value is 100, so 50 would mean half
-    private int interestValue = 50;
+    private float interestValue = 50.0f;
     public Image interestValueBar;
 
-    private void Update()
+    public void changeInterestValue(float amt)
     {
-        // Initiates dialogue when the Space Bar is pressed
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            SpeakTo();
-            changeInterestValue(0);
-        }
-    }
-
-    // Trigger dialogue for the Prince
-    public void SpeakTo()
-    {
-        DialogueManager.Instance.StartDialogue(Name, Dialogue.RootNode);
-    }
-
-    public void changeInterestValue(int amt)
-    {
+        Debug.Log("Interest Changed by " + amt);
         interestValue += amt;
-        interestValueBar.fillAmount = (float)interestValue/100.0f;
+        interestValueBar.fillAmount = interestValue/100.0f;
     }    
 }

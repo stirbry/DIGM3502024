@@ -9,13 +9,14 @@ using UnityEngine;
         Night,
         Sunrise
     }
-
 public class DayNightCycle : MonoBehaviour
 {
     private float rotationValToKeepTrack = 0.0f, rotatorAmount=0.0f; 
 
     public GameObject Sun, Moon;
     public Transform SunUpPos, SunDownPos, MoonUpPos, MoonDownPos;
+
+   
 
     public DayNightStatus currentDayNightStatus;
 
