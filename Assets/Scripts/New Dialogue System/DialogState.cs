@@ -53,7 +53,7 @@ public class DialogState : StateMachineBehaviour
             default:
                 //so if there is multiple choices to speak, it will need to display next dialog choices, and also 
                 dialogueController.onHold();
-                dialogueController.DisplayNextDialogueChoices(nextChoicesDialogues(animator, stateInfo, layerIndex));
+                dialogueController.DisplayNextDialogueChoicesInStars(nextChoicesDialogues(animator, stateInfo, layerIndex));
                 break;
         }
         
@@ -67,9 +67,12 @@ public class DialogState : StateMachineBehaviour
         }
     }
 
-    private List<string> nextChoicesDialogues(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    //tuple needed
+    private (List<string> nextDialogueTexts, List<string> nextDialogueLabels) 
+        nextChoicesDialogues(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         List<string> nextDialogueTexts = new List<string>();
+        List<string> nextDialogueLabels = new List<string>();
         AnimatorController animatorController = animator.runtimeAnimatorController as AnimatorController;
         if (animatorController != null)
         {
@@ -93,16 +96,17 @@ public class DialogState : StateMachineBehaviour
                         //DialogState from the destination state
                         DialogState dialogState = destinationState.behaviours.OfType<DialogState>().FirstOrDefault();
 
-                        //check if t he destination state has a DialogState 
+                        //check if the destination state has a DialogState 
                         if (dialogState != null)
                         {
                             nextDialogueTexts.Add(dialogState.dialogText);
+                            nextDialogueLabels.Add(destinationState.name);
                         }
                     }
                     break;
                 }
             }
         }
-        return nextDialogueTexts;
+        return (nextDialogueTexts, nextDialogueLabels);
     }
 }
