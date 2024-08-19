@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEditor.Animations;
+
 
 public class DislogueController : MonoBehaviour
 {
@@ -17,25 +19,40 @@ public class DislogueController : MonoBehaviour
     public RectTransform area;
     public GameObject buttonPrefab;
 
+    //STart shaped Buttons and dialogue
+    public List<Button> optionButton;
+    public List<TextMeshProUGUI> dialogueOptionFullBox;
+    private bool canPlayerChoose = false;
+
     void Start()
     {
         gm = GetComponent<GameManager>();
         sm = GetComponent<SoundManager>();
         dialogueChart = GetComponent<Animator>();
+
+		//hide the dialogueChoices
+		foreach (Button button in optionButton)
+		{
+            button.gameObject.GetComponent<Image>().enabled = false;
+		}
     }
     public void DisplayDialogPrince(Sprite charImg, string dialogueText, float interestChange)
     {
         sm.playDialogueChange();
         //interestChange does not concern the Prince dialogue
         header.text = "The Little Prince";
-        dialogue.text = dialogueText;
+        //dialogue.text = dialogueText;
+        StartCoroutine(TypeText(dialogue, dialogueText, 2.0f));
+
     }
     public void DisplayDialogLampLighter(Sprite charImg, string dialogueText, float interestChange)
     {
         sm.playDialogueChange();
         header.text = "The Lamplighter";
-        dialogue.text = dialogueText;
-        prince.changeInterestValue(interestChange);
+        //dialogue.text = dialogueText;
+        StartCoroutine(TypeText(dialogue, dialogueText, 2.0f));
+
+        //prince.changeInterestValue(interestChange);
     }
 
     public void ClearDialogueChoices()
@@ -46,6 +63,8 @@ public class DislogueController : MonoBehaviour
         }
     }
     //spawns buttons
+    //Deprecated
+    //we are using something else to show options
     public void DisplayNextDialogueChoices(List<string> nextDialogues)
     {
         int dialogueOptionsCount = nextDialogues.Count;
@@ -82,12 +101,68 @@ public class DislogueController : MonoBehaviour
             button.GetComponent<Button>().onClick.AddListener(() => ChooseNextDialog(index));
         }
     }
+    //newer one for stars 
+    public void DisplayNextDialogueChoicesInStars((List<string> nextDialogueTexts, List<string> nextDialogueLabels) dialogues)
+	{
+        canPlayerChoose = true;
+       
+        for (int i = 0; i < 2; i++)
+		{
+            //show UI first
+            optionButton[i].gameObject.GetComponent<Image>().enabled = true;
+            //set texts
+            optionButton[i].GetComponentInChildren<TextMeshProUGUI>().text = dialogues.nextDialogueLabels[i];
+            dialogueOptionFullBox[i].text = dialogues.nextDialogueTexts[i];
+            //add listener
+            //Since I know there will only be 2 options, rather to hardcode it in editor
+            //optionButton[i].GetComponent<Button>().onClick.AddListener(() => ChooseNextDialog(i));
+            //dialogueOptionFullBox[i].GetComponentInParent<Button>().onClick.AddListener(() => ChooseNextDialog(i));
+        }
+    }
     public void ChooseNextDialog(int choiceIndex)
     {
+        if (!canPlayerChoose) return;
         dialogueChart.SetInteger("Choice", choiceIndex);
+        canPlayerChoose = false;
+        //hide the dialogueChoices
+        foreach (Button button in optionButton)
+        {
+            button.gameObject.GetComponent<Image>().enabled = false;
+            button.GetComponentInChildren<TextMeshProUGUI>().text = "";
+        }
     }
     public void onHold()
     {
         dialogueChart.SetInteger("Choice", -1);
+    }
+
+    //for printy effect
+    private IEnumerator TypeText(TextMeshProUGUI dialogueTextUI, string textToDisplay, float totalDuration)
+    {
+        dialogueTextUI.text = ""; //clr
+
+        int totalCharacters = textToDisplay.Length;
+        float timePerCharacter = totalDuration / totalCharacters;
+
+        for (int i = 0; i < totalCharacters; i++)
+        {
+            dialogueTextUI.text += textToDisplay[i]; // Append the next character
+            yield return new WaitForSeconds(timePerCharacter); // Wait before displaying the next character
+        }
+    }
+    private System.Collections.IEnumerator ScaleTween(RectTransform target, Vector3 startScale, Vector3 endScale, float duration, System.Action onComplete = null)
+    {
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            target.localScale = Vector3.Lerp(startScale, endScale, elapsed / duration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        target.localScale = endScale;
+
+        onComplete?.Invoke();
     }
 }
