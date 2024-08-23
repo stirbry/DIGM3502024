@@ -17,6 +17,8 @@ MonoBehaviour:
   dialogText: 'I... '
   intrestValue: 0
   outgoingTransitionsCount: 2
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &-9090955506496630992
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -60,6 +62,8 @@ MonoBehaviour:
     and the order has not changed!'
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &-8974497978733094515
 AnimatorState:
   serializedVersion: 6
@@ -186,6 +190,8 @@ MonoBehaviour:
   dialogText: 'The orders have not been changed. That is a tragedy! '
   intrestValue: 20
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &-8815427854977662592
 AnimatorState:
   serializedVersion: 6
@@ -361,6 +367,8 @@ MonoBehaviour:
   dialogText: That man is the only one of them all whom I could have made my friend.
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!114 &-8350056514848696054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -380,6 +388,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &-8342657836935196772
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -419,6 +429,8 @@ MonoBehaviour:
   dialogText: "That\u2019s a little unfortunate."
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &-8187001857517732307
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -458,6 +470,8 @@ MonoBehaviour:
   dialogText: I put the lamp out in the morning, and in the evening I lit it again.
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!114 &-7849773640133692357
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -476,6 +490,8 @@ MonoBehaviour:
     \r\n"
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!114 &-7815425962865370601
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -493,6 +509,8 @@ MonoBehaviour:
   dialogText: 'I follow a terrible profession. In the old days it was reasonable. '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &-7657887483059964291
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -537,6 +555,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &-7370296391512172817
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -579,6 +599,12 @@ MonoBehaviour:
   dialogText: And have the orders changed since that time?
   intrestValue: 0
   outgoingTransitionsCount: 2
+  nextDialogueTexts:
+  - "No, they have not changed. I will admit, I don\u2019t want to do this anymore"
+  - 'The orders have not been changed. That is a tragedy! '
+  nextDialogueLabels:
+  - "Don\u2019t want to do"
+  - That is a tragedy!
 --- !u!114 &-7313123463339048133
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -596,6 +622,8 @@ MonoBehaviour:
   dialogText: "I wish to become friends with you if possible.\r"
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!114 &-7264094051957057058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -614,6 +642,8 @@ MonoBehaviour:
     happy you did."
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!114 &-7153533717705904254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -633,6 +663,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &-7041160066666036294
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -677,6 +709,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &-6923200255008734157
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -747,6 +781,8 @@ MonoBehaviour:
   dialogText: We can talk about a lot of stuff during that time.
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &-6815175866742508050
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -972,6 +1008,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &-6560735867797476722
 AnimatorState:
   serializedVersion: 6
@@ -1070,6 +1108,8 @@ MonoBehaviour:
   dialogText: "Then\u2026"
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &-6263586676117780662
 AnimatorState:
   serializedVersion: 6
@@ -1140,6 +1180,8 @@ MonoBehaviour:
   dialogText: Those are the orders.
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &-5856685159079890057
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1181,6 +1223,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!114 &-5755492111234877483
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1199,6 +1243,12 @@ MonoBehaviour:
     as you want.
   intrestValue: 0
   outgoingTransitionsCount: 2
+  nextDialogueTexts:
+  - That is a good suggestion and something that could make my life a little easier.
+  - "That doesn\u2019t do me any good. The one thing I love in life is sleep."
+  nextDialogueLabels:
+  - Good suggestion
+  - "Doesn\u2019t do me any good"
 --- !u!114 &-5746903349944391361
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1218,6 +1268,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &-5654611849653265222
 AnimatorState:
   serializedVersion: 6
@@ -1263,6 +1315,8 @@ MonoBehaviour:
   dialogText: But why have you just lit it again?
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &-5614099625843361013
 AnimatorState:
   serializedVersion: 6
@@ -1333,6 +1387,8 @@ MonoBehaviour:
   dialogText: 'That man, that man would be scorned by all the others. '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &-5312696979237438973
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1503,6 +1559,8 @@ MonoBehaviour:
   dialogText: Sigh...
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &-4741697615444255044
 AnimatorState:
   serializedVersion: 6
@@ -1738,6 +1796,8 @@ MonoBehaviour:
     around it.
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &-4137619619366077571
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1886,6 +1946,8 @@ MonoBehaviour:
   dialogText: "Don\u2019t forget to continue doing what I told you. \r"
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!114 &-3922254622288611801
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1903,6 +1965,8 @@ MonoBehaviour:
   dialogText: To be always in the sunshine, you need only walk along rather slowly.
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &-3907769259904803901
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2000,6 +2064,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!114 &-3666632539260302558
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2017,6 +2083,8 @@ MonoBehaviour:
   dialogText: "Sure. I can do that. \n"
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!114 &-3577803192981918945
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2035,6 +2103,8 @@ MonoBehaviour:
     do so. I want to rest."
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &-3560856944304956319
 AnimatorState:
   serializedVersion: 6
@@ -2230,6 +2300,8 @@ MonoBehaviour:
   dialogText: 'Good evening. Those are the orders. '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &-3168989143207241130
 AnimatorState:
   serializedVersion: 6
@@ -2275,6 +2347,8 @@ MonoBehaviour:
   dialogText: Then what?
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!114 &-3109181817146699931
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2294,6 +2368,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &-3052856204769363104
 AnimatorState:
   serializedVersion: 6
@@ -2339,6 +2415,8 @@ MonoBehaviour:
   dialogText: 'I have been alone on this planet for a long time. '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &-2929463153095004870
 AnimatorState:
   serializedVersion: 6
@@ -2384,6 +2462,8 @@ MonoBehaviour:
   dialogText: I do not understand.
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &-2837690582237335666
 AnimatorState:
   serializedVersion: 6
@@ -2484,6 +2564,8 @@ MonoBehaviour:
     to me.
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &-2736346373617078085
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2555,6 +2637,8 @@ MonoBehaviour:
     sleep."
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &-2623500147189867795
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2653,6 +2737,8 @@ MonoBehaviour:
   dialogText: I see.
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &-2500463325450779449
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2885,6 +2971,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &-1609770479990547572
 AnimatorState:
   serializedVersion: 6
@@ -2958,6 +3046,8 @@ MonoBehaviour:
   dialogText: "Oh? Do go on. \r\n"
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &-1506765412898669086
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -3304,6 +3394,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!114 &-333450474915077005
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3321,6 +3413,8 @@ MonoBehaviour:
   dialogText: "Don\u2019t worry though, I will be here for maybe a day or two."
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!114 &-329729390619703343
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3338,6 +3432,8 @@ MonoBehaviour:
   dialogText: Walk slowly with the sun.
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &-186217797056001621
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -3450,6 +3546,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &56327832188105030
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -3491,6 +3589,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &179112332778719453
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -3534,6 +3634,8 @@ MonoBehaviour:
     as you want.
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &252027489587637878
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -3576,6 +3678,8 @@ MonoBehaviour:
   dialogText: "A little company wouldn\u2019t hurt."
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &616314946304818587
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -3721,6 +3825,8 @@ MonoBehaviour:
   dialogText: "That does not help me. I just want to sleep. \r\n"
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &947134428950701142
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -3765,6 +3871,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &1085375230096792146
 AnimatorState:
   serializedVersion: 6
@@ -3837,6 +3945,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 0
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &1353025195673175207
 AnimatorState:
   serializedVersion: 6
@@ -3910,6 +4020,8 @@ MonoBehaviour:
   dialogText: 'It''s been so long since I could rest. How nostalgic. '
   intrestValue: 0
   outgoingTransitionsCount: 0
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &1366800431910631395
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -4036,6 +4148,8 @@ MonoBehaviour:
   dialogText: Good morning. Why have you just put out your lamp?
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &1516882866164836981
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -4078,6 +4192,8 @@ MonoBehaviour:
   dialogText: Do you mind if I stay here for a little bit?
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &1543767330914733984
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -4121,6 +4237,8 @@ MonoBehaviour:
     ridiculous to me. \n"
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!114 &1815630024412922750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4138,6 +4256,8 @@ MonoBehaviour:
   dialogText: Yes, a month. Thirty minutes. Thirty days.
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &1889773242709480262
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -4391,6 +4511,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &2705990433961704653
 AnimatorState:
   serializedVersion: 6
@@ -4438,6 +4560,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &2793529168766333060
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -4532,6 +4656,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &2973176153097695878
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -4628,6 +4754,8 @@ MonoBehaviour:
     around it.
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &3575224102361446084
 AnimatorState:
   serializedVersion: 6
@@ -4779,6 +4907,8 @@ MonoBehaviour:
   dialogText: 'By the king, by the conceited man, by the tippler, by the businessman. '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &4203008631704367631
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -4899,6 +5029,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &4752575316279012351
 AnimatorState:
   serializedVersion: 6
@@ -4944,6 +5076,8 @@ MonoBehaviour:
   dialogText: "Then you\u2019re unlucky."
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!114 &4858842597361460322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4962,6 +5096,8 @@ MonoBehaviour:
     a single second of repose. '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &4902595949911173806
 AnimatorState:
   serializedVersion: 6
@@ -5071,7 +5207,7 @@ AnimatorStateMachine:
     m_Position: {x: 90, y: 1820, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8714550488153661225}
-    m_Position: {x: 670, y: -140, z: 0}
+    m_Position: {x: 730, y: -120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1478967857444869723}
     m_Position: {x: 660, y: 140, z: 0}
@@ -5170,7 +5306,7 @@ AnimatorStateMachine:
     m_Position: {x: 900, y: 3240, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4054888503811895304}
-    m_Position: {x: 900, y: 3340, z: 0}
+    m_Position: {x: 1270, y: 3350, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2700772069046907121}
     m_Position: {x: 900, y: 3420, z: 0}
@@ -5209,7 +5345,7 @@ AnimatorStateMachine:
     m_Position: {x: 70, y: 2800, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4995699226220354130}
-    m_Position: {x: 70, y: 2670, z: 0}
+    m_Position: {x: -510, y: 2670, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1085375230096792146}
     m_Position: {x: 70, y: 2920, z: 0}
@@ -5227,7 +5363,7 @@ AnimatorStateMachine:
     m_Position: {x: 70, y: 3280, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7123170583959521206}
-    m_Position: {x: 590, y: 4780, z: 0}
+    m_Position: {x: 310, y: 4850, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1353025195673175207}
     m_Position: {x: 590, y: 3150, z: 0}
@@ -5316,6 +5452,8 @@ MonoBehaviour:
     for sleep.
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &5164590559861079523
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -5433,6 +5571,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &5549362786819277073
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -5556,6 +5696,8 @@ MonoBehaviour:
   dialogText: "There is nothing to understand. Orders are orders. \r\n"
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &6036624709406177478
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -5673,6 +5815,8 @@ MonoBehaviour:
   dialogText: "I won\u2019t, thank you.\r\n"
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &6620502358034775492
 AnimatorState:
   serializedVersion: 6
@@ -5819,6 +5963,8 @@ MonoBehaviour:
     easier.
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!114 &6834993670607278107
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5836,6 +5982,8 @@ MonoBehaviour:
   dialogText: Good evening. Why have you just put out your lamp?
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &6949418755793551606
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -6029,6 +6177,8 @@ MonoBehaviour:
   dialogText: Good morning. Those are the orders.
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1102 &7319096219861462697
 AnimatorState:
   serializedVersion: 6
@@ -6204,6 +6354,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!114 &7939974551407795423
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6221,6 +6373,8 @@ MonoBehaviour:
   dialogText: 'Yay! But, I also have something to search for out there. '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &7945318112041237809
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -6347,6 +6501,8 @@ MonoBehaviour:
   dialogText: "That\u2019s a really interesting proposal. "
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &8661375971271633816
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -6471,6 +6627,8 @@ MonoBehaviour:
 '
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &9067314269285174358
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -6514,6 +6672,8 @@ MonoBehaviour:
     anymore"
   intrestValue: 0
   outgoingTransitionsCount: 1
+  nextDialogueTexts: []
+  nextDialogueLabels: []
 --- !u!1101 &9154276791816257055
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

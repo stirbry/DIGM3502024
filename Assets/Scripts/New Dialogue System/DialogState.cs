@@ -1,8 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
+//using System.Linq;
 using UnityEngine;
-using UnityEditor.Animations;
+//cant use UnityEditor, not available in bulds at runtime
+//using UnityEditor.Animations;
 public enum CharacterType
 {
     LittlePrince,
@@ -16,6 +16,8 @@ public class DialogState : StateMachineBehaviour
     [TextArea] public string dialogText; //text box for dialogues (works with long)
     public float intrestValue = 0.0f;
     public int outgoingTransitionsCount = 0; //var to store the number of outgoing transitions
+    [TextArea] public List<string> nextDialogueTexts = new List<string>();
+    public List<string> nextDialogueLabels = new List<string>();
     DislogueController dialogueController;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
@@ -53,7 +55,9 @@ public class DialogState : StateMachineBehaviour
             default:
                 //so if there is multiple choices to speak, it will need to display next dialog choices, and also 
                 dialogueController.onHold();
-                dialogueController.DisplayNextDialogueChoicesInStars(nextChoicesDialogues(animator, stateInfo, layerIndex));
+                //old system
+                //dialogueController.DisplayNextDialogueChoicesInStars(nextChoicesDialogues(animator, stateInfo, layerIndex));
+                dialogueController.DisplayNextDialogueChoicesInStars(nextChoicesDialogues());
                 break;
         }
         
@@ -67,13 +71,28 @@ public class DialogState : StateMachineBehaviour
         }
     }
 
+    private (List<string> nextDialogueTexts, List<string> nextDialogueLabels) nextChoicesDialogues()
+	{
+        if(nextDialogueTexts.Count<2 && nextDialogueLabels.Count<2)
+		{
+            Debug.LogWarning("Branching paths detected, but next choices options List not filled. Returning null Lists");
+            List<string> dummy1 = new List<string>();
+            List<string> dummy2 = new List<string>();
+            return (dummy1, dummy2);
+		}
+        return (nextDialogueTexts, nextDialogueLabels);
+    }
+}
+    //Since we no longer have UnityEditor.Animations. 
+    /*
     //tuple needed
     private (List<string> nextDialogueTexts, List<string> nextDialogueLabels) 
         nextChoicesDialogues(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         List<string> nextDialogueTexts = new List<string>();
         List<string> nextDialogueLabels = new List<string>();
-        AnimatorController animatorController = animator.runtimeAnimatorController as AnimatorController;
+
+        RuntimeAnimatorController animatorController = animator.runtimeAnimatorController;
         if (animatorController != null)
         {
             //get the stateMachine from the casted animationcontroller
@@ -109,4 +128,4 @@ public class DialogState : StateMachineBehaviour
         }
         return (nextDialogueTexts, nextDialogueLabels);
     }
-}
+    */
