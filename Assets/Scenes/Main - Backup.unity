@@ -3744,7 +3744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.31132078, g: 0.18356179, b: 0.18356179, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3997,14 +3997,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5078ce1426c3a0d4e8e58cc4f7986fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prince: {fileID: 1410315111}
   header: {fileID: 1646331842}
   dialogue: {fileID: 197836149}
   dialogueBackground: {fileID: 1324808295}
+  charEmotions: {fileID: 1700186785}
   princeBox: {fileID: -485214829, guid: a8c21d662c14e5c4d8300a45d0910244, type: 3}
   lampLighterBox: {fileID: -1039910510, guid: b3c511925129b264e90299fc8c7cb93c, type: 3}
-  area: {fileID: 1353667800}
-  buttonPrefab: {fileID: 4172596359450068927, guid: 95ef241782f31204ba4f982413d816db, type: 3}
   optionButton:
   - {fileID: 1961772398}
   - {fileID: 480437499}

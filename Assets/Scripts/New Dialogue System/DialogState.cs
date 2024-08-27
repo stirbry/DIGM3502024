@@ -28,16 +28,16 @@ public class DialogState : StateMachineBehaviour
         dialogueController = GameObject.Find("GameManager").GetComponent<DislogueController>();
 
         //clear dialogue choices
-        dialogueController.ClearDialogueChoices();
+        //dialogueController.ClearDialogueChoices();
 
         //show the new dialogues fromn the text field
         if(character == CharacterType.LittlePrince)
         {
-            dialogueController.DisplayDialogPrince(characterSprite, dialogText, intrestValue);
+            dialogueController.DisplayDialogPrince(characterSprite, dialogText);
         }
         else
         {
-            dialogueController.DisplayDialogLampLighter(characterSprite, dialogText, intrestValue);
+            dialogueController.DisplayDialogLampLighter(characterSprite, dialogText);
         }
 
         //now we check

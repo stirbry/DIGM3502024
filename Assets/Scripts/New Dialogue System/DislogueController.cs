@@ -11,15 +11,14 @@ public class DislogueController : MonoBehaviour
     GameManager gm;
     SoundManager sm;
     Animator dialogueChart;
-    public PrinceController prince;
     //Dialogue Exchange
     public TextMeshProUGUI header, dialogue; 
-    public Image dialogueBackground; 
+    public Image dialogueBackground, charEmotions; 
     public Sprite princeBox, lampLighterBox;
 
-    //Buttons and new Dialogue options
-    public RectTransform area;
-    public GameObject buttonPrefab;
+    //Buttons and new Dialogue options //Deprecated in favor of stars
+    //public RectTransform area;
+    //public GameObject buttonPrefab;
 
     //STart shaped Buttons and dialogue
     public List<Button> optionButton;
@@ -38,44 +37,45 @@ public class DislogueController : MonoBehaviour
             button.gameObject.GetComponent<Image>().enabled = false;
 		}
     }
-    public void DisplayDialogPrince(Sprite charImg, string dialogueText, float interestChange)
+    public void DisplayDialogPrince(Sprite charImg, string dialogueText)
     {
         sm.playDialogueChange();
         //interestChange does not concern the Prince dialogue
         header.text = "The Little Prince";
+        charEmotions.sprite = charImg;
         //dialogue.text = dialogueText;
         StartCoroutine(TypeText(dialogue, dialogueText, 2.0f));
         dialogueBackground.sprite = princeBox;
 
     }
-    public void DisplayDialogLampLighter(Sprite charImg, string dialogueText, float interestChange)
+    public void DisplayDialogLampLighter(Sprite charImg, string dialogueText)
     {
         sm.playDialogueChange();
         header.text = "The Lamplighter";
+        charEmotions.sprite = charImg;
         //dialogue.text = dialogueText;
         StartCoroutine(TypeText(dialogue, dialogueText, 2.0f));
         dialogueBackground.sprite = lampLighterBox;
-
-        //prince.changeInterestValue(interestChange);
     }
-
+    /*
     public void ClearDialogueChoices()
     {
         foreach (Transform child in area)
         {
             Destroy(child.gameObject);
         }
-    }
+    }*/
     //spawns buttons
     //Deprecated
     //we are using something else to show options
     public void DisplayNextDialogueChoices(List<string> nextDialogues)
     {
+        /*
         int dialogueOptionsCount = nextDialogues.Count;
         if (dialogueOptionsCount == 0) return;
 
         //Clear any existing buttons first
-        ClearDialogueChoices();
+        //ClearDialogueChoices();
 
         //math for spacing between buttons, vertical of anchor
         float spacingFromBottom = 0.94f/(float)(nextDialogues.Count + 1); //0.94 is after the 0.03 padding top and bottom
@@ -103,7 +103,8 @@ public class DislogueController : MonoBehaviour
             //Add the onClick listener to the button
             int index = i;
             button.GetComponent<Button>().onClick.AddListener(() => ChooseNextDialog(index));
-        }
+            
+        }*/
     }
     //newer one for stars 
     public void DisplayNextDialogueChoicesInStars((List<string> nextDialogueTexts, List<string> nextDialogueLabels) dialogues)
