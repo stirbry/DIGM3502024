@@ -26,7 +26,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: 4152fa09be0bbd641b47cfa53f10e875, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: 'I... '
   intrestValue: 0
@@ -70,7 +70,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: 4152fa09be0bbd641b47cfa53f10e875, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: ' From year to year the planet has been turning more and more rapidly
     and the order has not changed!'
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: 4152fa09be0bbd641b47cfa53f10e875, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: 'The orders have not been changed. That is a tragedy! '
   intrestValue: 0
@@ -408,7 +408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: b79db9b1acc1ac84cbd76613f7fed49f, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: 'So you say.
 
@@ -492,7 +492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: 4152fa09be0bbd641b47cfa53f10e875, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: I put the lamp out in the morning, and in the evening I light it again.
   intrestValue: 0
@@ -530,7 +530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: 4152fa09be0bbd641b47cfa53f10e875, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: 'I follow a terrible profession. In the old days it was reasonable. '
   intrestValue: 0
@@ -753,7 +753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: b79db9b1acc1ac84cbd76613f7fed49f, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: 'Something to search for...
 
@@ -1080,7 +1080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: 4152fa09be0bbd641b47cfa53f10e875, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: 'The orders are that I put out my lamp. Good evening.
 
@@ -1210,7 +1210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: d036d3aff743b404e88bb7cf073b25b7, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: "Then\u2026"
   intrestValue: 0
@@ -1307,7 +1307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: 4152fa09be0bbd641b47cfa53f10e875, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: Those are the orders.
   intrestValue: 0
@@ -1687,7 +1687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: 4152fa09be0bbd641b47cfa53f10e875, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: Sigh...
   intrestValue: 0
@@ -2298,7 +2298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: 4152fa09be0bbd641b47cfa53f10e875, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: "I don\u2019t want to do my job anymore. It is tiring to continue to
     do so. I want to rest."
@@ -2527,7 +2527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: 4152fa09be0bbd641b47cfa53f10e875, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: 'Good evening. Those are the orders. '
   intrestValue: 0
@@ -2642,7 +2642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: b79db9b1acc1ac84cbd76613f7fed49f, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: 'I have been alone on this planet for a long time. '
   intrestValue: 0
@@ -2863,7 +2863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: b79db9b1acc1ac84cbd76613f7fed49f, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: "That doesn\u2019t do me any good. The one thing I love in life is
     sleep."
@@ -2908,7 +2908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: ea43f3240681c874db53a93e5e6c0787, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: It would seem that way...
   intrestValue: 0
@@ -3379,7 +3379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: b79db9b1acc1ac84cbd76613f7fed49f, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: "Oh? Do go on. \r\n"
   intrestValue: 0
@@ -3896,31 +3896,31 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: -2
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Day
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Start
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: LostInterest
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: TutorialIndex
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 1
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -3946,7 +3946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: b79db9b1acc1ac84cbd76613f7fed49f, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: 'It is as you say.
 
@@ -4108,7 +4108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: b79db9b1acc1ac84cbd76613f7fed49f, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: "A little company wouldn\u2019t hurt."
   intrestValue: 0
@@ -4255,7 +4255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: 4152fa09be0bbd641b47cfa53f10e875, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: "That does not help me. I just want to sleep. \r\n"
   intrestValue: 0
@@ -4299,7 +4299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: b79db9b1acc1ac84cbd76613f7fed49f, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: 'Sounds good.
 
@@ -4450,7 +4450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: 4152fa09be0bbd641b47cfa53f10e875, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: 'It''s been so long since I could rest. How nostalgic. '
   intrestValue: 0
@@ -4714,7 +4714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: b79db9b1acc1ac84cbd76613f7fed49f, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: Yes, a month. Thirty minutes. Thirty days.
   intrestValue: 0
@@ -4810,7 +4810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterSprite: {fileID: 21300000, guid: 0a1831a0d49c91547a4e077cd0c12b49, type: 3}
   character: 0
-  dialogText: "I noticed that you haven\u2019t been lighting your lamp.you haven\u2019t
+  dialogText: "I noticed that you haven\u2019t been lighting your lamp. You haven\u2019t
     been lighting your lamp."
   intrestValue: 0
   outgoingTransitionsCount: 1
@@ -5012,7 +5012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: 4152fa09be0bbd641b47cfa53f10e875, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: 'I stand alone on this planet. I wish to take a break.
 
@@ -5061,7 +5061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: b79db9b1acc1ac84cbd76613f7fed49f, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: 'Will you come by and visit once in a while?
 
@@ -5157,7 +5157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: 4152fa09be0bbd641b47cfa53f10e875, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: 'The orders are that I put out my lamp. Good morning.
 
@@ -5585,7 +5585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: b79db9b1acc1ac84cbd76613f7fed49f, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: 'Why would you want to stay here?
 
@@ -5653,7 +5653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: 4152fa09be0bbd641b47cfa53f10e875, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: 'the planet now makes a complete turn every minute. I no longer have
     a single second of repose. '
@@ -6107,7 +6107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: 4152fa09be0bbd641b47cfa53f10e875, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: I had the rest of the day for relaxation and the rest of the night
     for sleep.
@@ -6224,7 +6224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: b79db9b1acc1ac84cbd76613f7fed49f, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: 'It is not funny at all! While we have been talking together, a month
     has gone by!
@@ -6352,7 +6352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: 4152fa09be0bbd641b47cfa53f10e875, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: "There is nothing to understand. Orders are orders. \r\n"
   intrestValue: 0
@@ -6471,7 +6471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: b79db9b1acc1ac84cbd76613f7fed49f, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: "I won\u2019t, thank you.\r\n"
   intrestValue: 0
@@ -6632,7 +6632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: b79db9b1acc1ac84cbd76613f7fed49f, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: That is a good suggestion and something that could make my life a little
     easier.
@@ -6879,7 +6879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: 4152fa09be0bbd641b47cfa53f10e875, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: Good morning. Those are the orders.
   intrestValue: 0
@@ -7054,7 +7054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: b79db9b1acc1ac84cbd76613f7fed49f, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: 'Once every minute I have to light my lamp and put it out!
 
@@ -7216,7 +7216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: b79db9b1acc1ac84cbd76613f7fed49f, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: "That\u2019s a really interesting proposal. "
   intrestValue: 0
@@ -7341,7 +7341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: b79db9b1acc1ac84cbd76613f7fed49f, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: 'It is as you say.
 
@@ -7387,7 +7387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4a27c4b69223f409411db94fd53558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprite: {fileID: 21300000, guid: 4152fa09be0bbd641b47cfa53f10e875, type: 3}
+  characterSprite: {fileID: 21300000, guid: d116e7fd2257e4a4fabdba2b6e8e32d4, type: 3}
   character: 1
   dialogText: "No, they have not changed. I will admit, I don\u2019t want to do this
     anymore"
