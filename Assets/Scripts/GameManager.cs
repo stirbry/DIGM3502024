@@ -7,7 +7,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public DayNightCycle dayNightCycle;
-    public DayNightStatus dayNightStatus;
+    //public DayNightStatus dayNightStatus;
     public Fire fire;
 
     // sets new script and empty object
@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
 
     // prince interest
     public Image princeInterestBar;
-    public float princeInterest = 100f, interestBarDepleteValPerSec = 1.667f;
+    public float princeInterest = 100f, interestBarDepleteValPerSec = 0f;
 
     public float waitTime = 15.0f;
     public float timer = 0.0f;
@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     //ending
     public Image fadeImage;
     public TextMeshProUGUI endingHeader, endingTagline; 
+
+    public SpriteRenderer wowBubble;
 
     void Start()
     {
@@ -40,17 +42,19 @@ public class GameManager : MonoBehaviour
         {
         case DayNightStatus.Night:
             if(!fire.isLit) OnLose();
-            stopNotify();
+            //stopNotify();
+            wowBubble.enabled = false;
             break;
         case DayNightStatus.Day:
             if(fire.isLit) OnLose();
-            stopNotify();
+            //stopNotify();
             break;
         case DayNightStatus.Sunrise:
             if(fire.isLit) notifyToPutOffFire();
             break;
         case DayNightStatus.Sunset:
             if(!fire.isLit) notifyToLightFire();
+            wowBubble.enabled = true;
             break;
         default:
             break;
@@ -66,7 +70,6 @@ public class GameManager : MonoBehaviour
                     if (!fire.isLit)
                     {
                         timer = 0.0f;
-                        Debug.Log("Ran out of time.");
                     }
                 }
         }
@@ -79,7 +82,6 @@ public class GameManager : MonoBehaviour
                     if (!fire.isLit)
                     {
                         timer = 0.0f;
-                        Debug.Log("Ran out of time.");
                     }
                 }
         }
@@ -88,7 +90,12 @@ public class GameManager : MonoBehaviour
     void OnLose()
     {
         princeInterest -= Time.deltaTime * interestBarDepleteValPerSec;
-        if(princeInterest < 0) princeInterest = 0f;
+        if(princeInterest < 0) 
+        {
+            princeInterest = 0f;
+
+            GetComponent<Animator>().SetBool("LostInterest", true);
+        }
         princeInterestBar.fillAmount = princeInterest / 100f;
     }
 
@@ -153,7 +160,6 @@ public class GameManager : MonoBehaviour
         endingTagline.overrideColorTags = true;
         while (timeSoFar < fadeTimer)
         {   
-            Debug.Log("Text fading to life");
             timeSoFar += Time.deltaTime;
             endingHeader.color = new Color(1f, 1f, 1f, (timeSoFar/fadeTimer));
             endingTagline.color = new Color(1f, 1f, 1f, (timeSoFar/fadeTimer));

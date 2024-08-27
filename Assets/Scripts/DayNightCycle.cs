@@ -16,7 +16,7 @@ public class DayNightCycle : MonoBehaviour
     public GameObject Sun, Moon;
     public Transform SunUpPos, SunDownPos, MoonUpPos, MoonDownPos;
 
-   
+    public Animator anim;
 
     public DayNightStatus currentDayNightStatus;
 
@@ -54,6 +54,8 @@ public class DayNightCycle : MonoBehaviour
 
             //Also, this is sunset
             currentDayNightStatus = DayNightStatus.Sunset;
+
+            anim.SetBool("Day", true);
         }
         //For moon to go down and sun to come up
         if(rotationValToKeepTrack>225 && rotationValToKeepTrack<315)
@@ -64,6 +66,7 @@ public class DayNightCycle : MonoBehaviour
 
             //Also, this is sunrise
             currentDayNightStatus = DayNightStatus.Sunrise;
+            anim.SetBool("Day", false);
         }
     }
 

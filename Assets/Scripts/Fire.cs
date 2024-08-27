@@ -14,14 +14,16 @@ public class Fire : MonoBehaviour
     public RectTransform snufferImage, lighterImage; // two images, the lighter and snuffer respectively
     public Button button1, button2; // buttons, 1 is for snuffer, 2 is lighter
 
+    public AudioClip lighter, extinguish;
+
     // Start is called before the first frame update
     void Start()
     {
-        isLit = true;
+        isLit = false;
         lamplightEquip = false;
         snufferEquip = false;
-        lampOn.enabled = true;
-        lampOff.enabled = false;
+        lampOn.enabled = false;
+        lampOff.enabled = true;
     }
 
     void Update(){
@@ -74,36 +76,33 @@ public class Fire : MonoBehaviour
         if((isSnufferEquipped() && isFireOn())) // turn off fire
         { 
             switchFireStatus();
-            Debug.Log("Fire is On? = " + isLit);
             fireSprite.enabled = false;
             lampOn.enabled = false;
             lampOff.enabled = true;
             
+            AudioSource.PlayClipAtPoint(extinguish, toolImage.position);
+
             // for images
             PutDownImage(button1);
             snufferEquip = false;
         }
-        else if (isLamplightEquipped() && (isFireOn() ^ isLamplightEquipped()))
+        else if (isLamplightEquipped() && (isFireOn() ^ isLamplightEquipped())) // turn on fire
         {
             switchFireStatus();
-            Debug.Log("Fire is On? = " + isLit);
             fireSprite.enabled = true;
             lampOn.enabled = true;
             lampOff.enabled = false;
+
+             AudioSource.PlayClipAtPoint(lighter, toolImage.position);
 
             // for images
             PutDownImage(button2);
             lamplightEquip = false;
         }
-        else
-        {
-            Debug.Log("You have the wrong tool equipped");
-        }
     }
 
     public void equipSnuffer()
     {
-        Debug.Log("Snuffer interacted");
         snufferEquip = !snufferEquip;
         lamplightEquip = false;
         if (isPickedUp){
@@ -115,7 +114,6 @@ public class Fire : MonoBehaviour
 
     public void equipLamplight()
     {
-        Debug.Log("Lamplight interacted");
         lamplightEquip = !lamplightEquip;
         snufferEquip = false;
         if (isPickedUp){
@@ -140,6 +138,7 @@ public class Fire : MonoBehaviour
 
     public void switchFireStatus(){
         isLit = !isLit;
+        GameObject.Find("GameManager").GetComponent<TutorialBehaviour>().AdvanceTutorialStage();
     }
 
 }

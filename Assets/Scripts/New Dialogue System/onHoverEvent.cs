@@ -10,6 +10,8 @@ public class onHoverEvent : MonoBehaviour
     private RectTransform uiRectTransform;
     private Coroutine currentTween;
 
+    public AudioClip adios;
+
     private void Awake()
     {
         // Cache the RectTransform of the UI component to display
@@ -22,11 +24,12 @@ public class onHoverEvent : MonoBehaviour
 
     public void OnPointerEnter()
     {
-        Debug.Log("Entered");
         if (currentTween != null) StopCoroutine(currentTween);
         uiToDisplay.SetActive(true);
         uiRectTransform.localScale = Vector3.zero; // Set initial scale
         currentTween = StartCoroutine(ScaleTween(uiRectTransform, Vector3.zero, Vector3.one, scalePopDuration));
+
+        AudioSource.PlayClipAtPoint(adios, transform.position);
     }
 
     public void OnPointerExit()
