@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class GameManager : MonoBehaviour
     public float waitTime = 15.0f;
     public float timer = 0.0f;
 
+    //ending
+    public Image fadeImage;
+    public TextMeshProUGUI endingHeader, endingTagline; 
 
     void Start()
     {
@@ -108,5 +112,56 @@ public class GameManager : MonoBehaviour
     void stopNotify()
     {
         lampNotif.StopRattle();
+    }
+
+    public void startEndingFade(float fadeTimer)
+    {
+        fadeImage.gameObject.SetActive(true);
+        StartCoroutine(FadeTheImage(fadeTimer));
+    }
+    public void startEndingTexts(string endingHeaderText, string endingTaglineText, float fadeDelayInSeconds, float fadeTimer)
+    {
+        endingHeader.gameObject.SetActive(true);
+        endingTagline.gameObject.SetActive(true);
+        StartCoroutine(StartDelay( endingHeaderText, endingTaglineText,  fadeDelayInSeconds,  fadeTimer));
+    }
+
+    private IEnumerator FadeTheImage(float fadeTimer)
+    {
+        float timeSoFar = 0f;
+        while (timeSoFar < fadeTimer)
+        {   
+            timeSoFar += Time.deltaTime;
+            fadeImage.color = new Color(0f, 0f, 0f, timeSoFar/fadeTimer);
+            yield return null; // Wait till next frame
+        }
+        //make sure it stays at 1 alpha
+        fadeImage.color = new Color(0f, 0f, 0f, 1f);
+    }
+    private IEnumerator StartDelay(string endingHeaderText, string endingTaglineText, float fadeDelayInSeconds, float fadeTimer)
+    {
+        yield return new WaitForSeconds(fadeDelayInSeconds);
+        endingHeader.text = endingHeaderText;
+        endingTagline.text = endingTaglineText;
+        StartCoroutine(FadeTheTexts(fadeTimer));
+    }
+
+    private IEnumerator FadeTheTexts(float fadeTimer)
+    {
+        float timeSoFar = 0f;
+        endingHeader.overrideColorTags = true;
+        endingTagline.overrideColorTags = true;
+        while (timeSoFar < fadeTimer)
+        {   
+            Debug.Log("Text fading to life");
+            timeSoFar += Time.deltaTime;
+            endingHeader.color = new Color(1f, 1f, 1f, (timeSoFar/fadeTimer));
+            endingTagline.color = new Color(1f, 1f, 1f, (timeSoFar/fadeTimer));
+            yield return null; // Wait till next frame
+        }
+        //make sure it stays at 1 alpha
+        endingHeader.color = new Color(1f, 1f, 1f, 1f);
+        endingTagline.color = new Color(1f, 1f, 1f, 1f);
+
     }
 }

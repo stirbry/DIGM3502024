@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Fire : MonoBehaviour
 {
     public bool isLit, isPickedUp, lamplightEquip, snufferEquip;
-    public SpriteRenderer fireSprite;
+    public SpriteRenderer fireSprite, lampOn, lampOff;
 
     private Vector2 originalPos;
     private RectTransform toolImage;
@@ -20,6 +20,8 @@ public class Fire : MonoBehaviour
         isLit = true;
         lamplightEquip = false;
         snufferEquip = false;
+        lampOn.enabled = true;
+        lampOff.enabled = false;
     }
 
     void Update(){
@@ -69,11 +71,13 @@ public class Fire : MonoBehaviour
 
     public void fireUpdate()
     {
-        if((isSnufferEquipped() && isFireOn()))
+        if((isSnufferEquipped() && isFireOn())) // turn off fire
         { 
             switchFireStatus();
             Debug.Log("Fire is On? = " + isLit);
             fireSprite.enabled = false;
+            lampOn.enabled = false;
+            lampOff.enabled = true;
             
             // for images
             PutDownImage(button1);
@@ -84,6 +88,8 @@ public class Fire : MonoBehaviour
             switchFireStatus();
             Debug.Log("Fire is On? = " + isLit);
             fireSprite.enabled = true;
+            lampOn.enabled = true;
+            lampOff.enabled = false;
 
             // for images
             PutDownImage(button2);
